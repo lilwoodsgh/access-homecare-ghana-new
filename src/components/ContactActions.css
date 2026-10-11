@@ -1,0 +1,15 @@
+.floating-care-actions{position:fixed;right:20px;bottom:22px;z-index:900;display:flex;flex-direction:column;gap:9px}
+.floating-action{min-height:44px;padding:0 15px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--white);border:1px solid var(--border-color);box-shadow:var(--shadow-md);color:var(--text-color);font-size:.82rem;font-weight:800;transition:transform var(--transition),background var(--transition),color var(--transition)}
+.floating-action:hover{transform:translateY(-2px)}
+.floating-action.whatsapp{background:#f0f8f2;color:#236a3b;border-color:#d5ead9}
+.floating-action.call{background:var(--primary-color);color:var(--white);border-color:var(--primary-color)}
+.floating-action.consultation{background:var(--primary-color);color:var(--white);border-color:var(--primary-color)}
+.mobile-care-bar{display:none}
+@media(max-width:700px){
+  .floating-care-actions{display:none}
+  .mobile-care-bar{position:fixed;left:12px;right:12px;bottom:12px;z-index:900;display:grid;grid-template-columns:1.35fr 1fr;gap:8px;padding:7px;background:rgba(255,253,251,.96);border:1px solid var(--border-color);border-radius:18px;box-shadow:0 14px 40px rgba(55,21,34,.16);backdrop-filter:blur(14px)}
+  .mobile-care-bar a{min-height:47px;border-radius:13px;display:flex;align-items:center;justify-content:center;gap:7px;font-size:.82rem;font-weight:800}
+  .mobile-care-primary{background:var(--primary-color);color:var(--white)}
+  .mobile-care-secondary{background:var(--accent-soft);color:var(--primary-color)}
+  body{padding-bottom:76px}
+}

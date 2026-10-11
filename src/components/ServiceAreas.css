@@ -1,0 +1,163 @@
+.service-areas {
+  width: 100%;
+  padding: 110px 0;
+
+  background: var(--light-background);
+}
+
+.service-areas-container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 90px;
+}
+
+.service-areas-content {
+  max-width: 500px;
+}
+
+.service-areas-eyebrow {
+  margin-bottom: 15px;
+
+  color: var(--primary-color);
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.service-areas-content h2 {
+  margin-bottom: 22px;
+
+  color: var(--text-color);
+
+  font-size: clamp(2.3rem, 4vw, 3.6rem);
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.service-areas-content > p {
+  margin-bottom: 30px;
+
+  color: #666666;
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.service-areas-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  min-height: 52px;
+  padding: 0 27px;
+
+  background: var(--primary-color);
+  color: var(--white);
+
+  border-radius: 4px;
+
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.service-areas-button:hover {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.service-areas-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.service-area {
+  min-height: 95px;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  background: var(--white);
+
+  border-radius: 6px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.service-area:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.service-area-icon {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: rgba(200, 16, 46, 0.1);
+  color: var(--primary-color);
+
+  border-radius: 50%;
+}
+
+.service-area span {
+  color: var(--text-color);
+
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+@media (max-width: 850px) {
+  .service-areas-container {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .service-areas-content {
+    max-width: 700px;
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  .service-areas-list {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .service-areas-button {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .service-areas {
+    padding: 80px 0;
+  }
+
+  .service-areas-list {
+    grid-template-columns: 1fr;
+  }
+}

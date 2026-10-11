@@ -1,0 +1,146 @@
+.care-cta {
+  position: relative;
+
+  width: 100%;
+  min-height: 560px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("/access-homecare-ghana/images/care-cta.jpg");
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+.care-cta-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(90, 0, 25, 0.88),
+      rgba(150, 0, 50, 0.72),
+      rgba(0, 0, 0, 0.35)
+    );
+}
+
+.care-cta-container {
+  position: relative;
+  z-index: 1;
+
+  width: min(1000px, 90%);
+  margin: 0 auto;
+}
+
+.care-cta-content {
+  max-width: 780px;
+  margin: 0 auto;
+
+  text-align: center;
+  color: var(--white);
+}
+
+.care-cta-eyebrow {
+  margin-bottom: 18px;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.care-cta-content h2 {
+  margin-bottom: 25px;
+
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+}
+
+.care-cta-content > p {
+  max-width: 680px;
+  margin: 0 auto 35px;
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.care-cta-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.care-cta-primary,
+.care-cta-secondary {
+  min-height: 54px;
+  padding: 0 30px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 4px;
+
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.care-cta-primary {
+  background: var(--white);
+  color: var(--primary-color);
+}
+
+.care-cta-primary:hover {
+  background: var(--light-background);
+  transform: translateY(-3px);
+}
+
+.care-cta-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  background: transparent;
+  color: var(--white);
+}
+
+.care-cta-secondary:hover {
+  background: var(--white);
+  color: var(--primary-color);
+
+  transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+  .care-cta {
+    min-height: 600px;
+  }
+
+  .care-cta-container {
+    width: 88%;
+  }
+
+  .care-cta-buttons {
+    flex-direction: column;
+
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .care-cta-primary,
+  .care-cta-secondary {
+    width: 100%;
+  }
+}
