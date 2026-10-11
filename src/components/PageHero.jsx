@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import './PageHero.css';
 
-function PageHero({ eyebrow, title, description, image = '/access-homecare-ghana/images/care-cta.jpg' }) {
+function PageHero({ eyebrow, title, description, image = '/access-homecare-ghana-new/images/care-cta.jpg' }) {
   return (
     <section className="page-hero">
       <div className="page-hero-image" style={{ backgroundImage: `url(${image})` }} />

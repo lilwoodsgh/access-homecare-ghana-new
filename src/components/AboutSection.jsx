@@ -10,7 +10,7 @@ function AboutSection() {
 
         <div className="About-image-wrapper">
           <img
-            src="/access-homecare-ghana/images/About-care.jpg"
+            src="/access-homecare-ghana-new/images/About-care.jpg"
             alt="Caregiver providing compassionate home care"
             className="about-image"
           />

@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import './SpecialtyServices.css';
 
 const specialtyServices = [
-  { image: '/access-homecare-ghana/images/hero.jpg', title: '24 Hour Home Care', description: 'Reliable support and compassionate care available around the clock.' },
-  { image: '/access-homecare-ghana/images/About-care.jpg', title: 'Intellectual & Developmental Disability Care', description: 'Personalised support that promotes independence, dignity and quality of life.' },
-  { image: '/access-homecare-ghana/images/care-cta.jpg', title: 'Alzheimer’s & Dementia Care', description: 'Compassionate care designed around the unique needs of each individual.' },
-  { image: '/access-homecare-ghana/images/hero.jpg', title: 'Private Duty Nursing', description: 'Professional nursing support delivered in the comfort of home.' },
-  { image: '/access-homecare-ghana/images/About-care.jpg', title: 'Personal Care at Home', description: 'Practical assistance with everyday activities while preserving independence.' },
-  { image: '/access-homecare-ghana/images/care-cta.jpg', title: 'Senior Home Care', description: 'Dedicated support helping seniors remain comfortable and safe at home.' },
+  { image: '/access-homecare-ghana-new/images/hero.jpg', title: '24 Hour Home Care', description: 'Reliable support and compassionate care available around the clock.' },
+  { image: '/access-homecare-ghana-new/images/About-care.jpg', title: 'Intellectual & Developmental Disability Care', description: 'Personalised support that promotes independence, dignity and quality of life.' },
+  { image: '/access-homecare-ghana-new/images/care-cta.jpg', title: 'Alzheimer’s & Dementia Care', description: 'Compassionate care designed around the unique needs of each individual.' },
+  { image: '/access-homecare-ghana-new/images/hero.jpg', title: 'Private Duty Nursing', description: 'Professional nursing support delivered in the comfort of home.' },
+  { image: '/access-homecare-ghana-new/images/About-care.jpg', title: 'Personal Care at Home', description: 'Practical assistance with everyday activities while preserving independence.' },
+  { image: '/access-homecare-ghana-new/images/care-cta.jpg', title: 'Senior Home Care', description: 'Dedicated support helping seniors remain comfortable and safe at home.' },
 ];
 
 function SpecialtyServices() {

@@ -12,7 +12,7 @@ const values = [
 
 function About() {
   return <>
-    <PageHero eyebrow="ABOUT ACCESS HOME CARE" title="Care that respects the person behind the care need." description="Access Home Care is built around a simple belief: people should be able to receive quality support while remaining comfortable, respected and connected to the life they know at home." image="/access-homecare-ghana/images/About-care.jpg" />
+    <PageHero eyebrow="ABOUT ACCESS HOME CARE" title="Care that respects the person behind the care need." description="Access Home Care is built around a simple belief: people should be able to receive quality support while remaining comfortable, respected and connected to the life they know at home." image="/access-homecare-ghana-new/images/About-care.jpg" />
 
     <section className="page-section">
       <div className="container page-split">
@@ -24,7 +24,7 @@ function About() {
             {['Individualised support plans', 'Respect for privacy and independence', 'Clear communication with families', 'A focus on safety, comfort and quality of life'].map(item => <li key={item}><Check size={18}/>{item}</li>)}
           </ul>
         </div>
-        <img src="/access-homecare-ghana/images/About-care.jpg" alt="Caregiver supporting an older adult at home" />
+        <img src="/access-homecare-ghana-new/images/About-care.jpg" alt="Caregiver supporting an older adult at home" />
       </div>
     </section>
 

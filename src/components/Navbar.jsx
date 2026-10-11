@@ -4,7 +4,7 @@ import { Menu, X, Phone, MessageCircle } from 'lucide-react';
 import { hasPhone, hasWhatsApp, siteConfig } from '../config';
 import './Navbar.css';
 
-const logo = '/access-homecare-ghana/images/logo.png';
+const logo = '/access-homecare-ghana-new/images/logo.png';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);

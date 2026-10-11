@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import './RecentNews.css';
 
 const newsItems = [
-  { category: 'Care Guide', title: 'Understanding Home Care', description: 'A practical introduction to the types of support families may consider when care at home becomes important.', icon: BookOpen, image: '/access-homecare-ghana/images/About-care.jpg' },
-  { category: 'Safety', title: 'Creating a Safer Home', description: 'Simple areas families can review when supporting someone with changing mobility or daily-living needs.', icon: ShieldCheck, image: '/access-homecare-ghana/images/care-cta.jpg' },
-  { category: 'Wellbeing', title: 'Supporting Wellbeing at Home', description: 'Why routine, dignity, social connection and emotional wellbeing matter alongside practical care.', icon: HeartPulse, image: '/access-homecare-ghana/images/hero.jpg' },
+  { category: 'Care Guide', title: 'Understanding Home Care', description: 'A practical introduction to the types of support families may consider when care at home becomes important.', icon: BookOpen, image: '/access-homecare-ghana-new/images/About-care.jpg' },
+  { category: 'Safety', title: 'Creating a Safer Home', description: 'Simple areas families can review when supporting someone with changing mobility or daily-living needs.', icon: ShieldCheck, image: '/access-homecare-ghana-new/images/care-cta.jpg' },
+  { category: 'Wellbeing', title: 'Supporting Wellbeing at Home', description: 'Why routine, dignity, social connection and emotional wellbeing matter alongside practical care.', icon: HeartPulse, image: '/access-homecare-ghana-new/images/hero.jpg' },
 ];
 
 function RecentNews() {

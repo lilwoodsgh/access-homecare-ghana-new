@@ -56,9 +56,17 @@
 
 .newsletter-form {
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
 
   min-width: 360px;
+}
+
+.newsletter-status {
+  flex-basis: 100%;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.8rem;
 }
 
 .newsletter-form input {

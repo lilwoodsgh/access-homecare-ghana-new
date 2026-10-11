@@ -15,27 +15,17 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-## Stage 5 contact configuration
-Verified contact details are centralized in `src/config.js` and can be supplied with `.env` variables documented in `.env.example`. Do not replace the empty defaults with invented company details.
+## GitHub Pages deployment
 
-## Stage 7 — Final QA / launch checklist
+Pushing to `main` runs `.github/workflows/deploy.yml`, which installs locked dependencies, runs lint and build, then publishes `dist` to the `gh-pages` branch. Configure GitHub Pages to deploy from that branch's root directory.
 
-Before publishing:
-1. Copy `.env.example` to `.env` and enter the verified company phone, WhatsApp, email, location and production site URL.
-2. Replace `public/images/logo.png` with the approved final logo if needed.
-3. Replace team, testimonial, news and service-area placeholders with verified company information.
-4. Update `public/sitemap.xml` and `public/robots.txt` with the final production domain.
-5. Connect the Contact page form to the chosen email/CRM/form endpoint.
-6. Install dependencies with `npm ci`, then run `npm run lint` and `npm run build`.
-7. Test every route directly on the deployed host, including the 404 page and mobile navigation.
+The current base path and sitemap target `https://lilwoodsgh.github.io/access-homecare-ghana-new/`. Update `vite.config.js`, `index.html`, `public/robots.txt`, and `public/sitemap.xml` together if the repository or production domain changes.
 
-## Stage 7 — Final QA / launch checklist
+Verified contact details are centralized in `src/config.js` and documented in `.env.example`. Local `.env` values are not available to GitHub Actions; configure `VITE_PHONE_NUMBER`, `VITE_WHATSAPP_NUMBER`, `VITE_CONTACT_EMAIL`, and `VITE_LOCATION` as repository Actions variables for the published build. The forms open the visitor's email app using the configured email. A form/CRM service is required for direct submission.
 
-Before publishing:
-1. Copy `.env.example` to `.env` and enter the verified company phone, WhatsApp, email, location and production site URL.
-2. Replace `public/images/logo.png` with the approved final logo if needed.
-3. Replace team, testimonial, news and service-area placeholders with verified company information.
-4. Update `public/sitemap.xml` and `public/robots.txt` with the final production domain.
-5. Connect the Contact page form to the chosen email/CRM/form endpoint.
-6. Install dependencies with `npm ci`, then run `npm run lint` and `npm run build`.
-7. Test every route directly on the deployed host, including the 404 page and mobile navigation.
+## Final launch checklist
+
+1. Replace the logo and any team, testimonial, news, and service-area placeholders with approved information.
+2. Update sitemap and robots URLs when using a custom domain.
+3. Run `npm ci`, `npm run lint`, and `npm run build`.
+4. Test nested routes, direct refreshes, the 404 page, and mobile navigation on the deployed host.

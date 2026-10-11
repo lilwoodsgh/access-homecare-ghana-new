@@ -15,7 +15,7 @@ function Footer() {
           <div className="footer-brand">
 
             <img
-              src="/access-homecare-ghana/images/logo.png"
+              src="/access-homecare-ghana-new/images/logo.png"
               alt="Access Home Care Ghana"
               className="footer-logo"
             />

@@ -14,7 +14,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Layout><Home /></Layout>} />
         <Route path="/about" element={<Layout><About /></Layout>} />
